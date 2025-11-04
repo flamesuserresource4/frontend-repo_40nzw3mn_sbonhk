@@ -27,7 +27,7 @@ export default function App() {
             <a href="#contact" className="hover:text-gray-900">Contact</a>
             <a
               href="#pricing"
-              className="inline-flex items-center gap-2 rounded-xl bg-fuchsia-600 px-4 py-2 font-medium text-white shadow-sm transition hover:bg-fuchsia-700"
+              className="inline-flex items-center gap-2 rounded-xl bg-fuchsia-500 px-4 py-2 font-medium text-white shadow-sm transition hover:bg-fuchsia-600"
             >
               <User className="h-4 w-4" /> Sign up
             </a>

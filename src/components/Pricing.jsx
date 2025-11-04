@@ -52,7 +52,7 @@ export default function Pricing() {
           {tiers.map((tier) => (
             <div key={tier.name} className={`relative rounded-2xl bg-gradient-to-br p-6 shadow-sm ring-1 ${tier.tone}`}>
               {tier.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-fuchsia-600 px-3 py-1 text-xs font-medium text-white shadow">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-fuchsia-500 px-3 py-1 text-xs font-medium text-white shadow">
                   <div className="inline-flex items-center gap-1">
                     <Star className="h-3 w-3" /> Most popular
                   </div>
@@ -76,7 +76,7 @@ export default function Pricing() {
               </ul>
               <a
                 href="#contact"
-                className={`mt-6 inline-flex w-full items-center justify-center rounded-xl bg-gray-900/90 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-gray-900 ${tier.popular ? "bg-fuchsia-600 hover:bg-fuchsia-700" : ""}`}
+                className={`mt-6 inline-flex w-full items-center justify-center rounded-xl bg-gray-900/90 px-4 py-2.5 text-sm font-medium text-white transition hover:bg-gray-900 ${tier.popular ? "bg-fuchsia-500 hover:bg-fuchsia-600" : ""}`}
               >
                 {tier.cta}
               </a>

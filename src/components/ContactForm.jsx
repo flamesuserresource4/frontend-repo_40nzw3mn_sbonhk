@@ -66,7 +66,7 @@ export default function ContactForm() {
               <p className="text-xs text-gray-500">We respect your privacy. No spam, ever.</p>
               <button
                 type="submit"
-                className="inline-flex items-center gap-2 rounded-xl bg-fuchsia-600 px-4 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-fuchsia-300 focus:ring-offset-2"
+                className="inline-flex items-center gap-2 rounded-xl bg-fuchsia-500 px-4 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-fuchsia-200 focus:ring-offset-2"
               >
                 <Mail className="h-4 w-4" /> Send message
               </button>

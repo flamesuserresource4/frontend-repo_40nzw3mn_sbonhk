@@ -42,7 +42,7 @@ export default function Hero() {
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
             <a
               href="#pricing"
-              className="inline-flex items-center justify-center gap-2 rounded-xl bg-fuchsia-600 px-5 py-3 text-white shadow-sm transition hover:bg-fuchsia-700 focus:outline-none focus:ring-2 focus:ring-fuchsia-300 focus:ring-offset-2"
+              className="inline-flex items-center justify-center gap-2 rounded-xl bg-fuchsia-500 px-5 py-3 text-white shadow-sm transition hover:bg-fuchsia-600 focus:outline-none focus:ring-2 focus:ring-fuchsia-200 focus:ring-offset-2"
             >
               <Rocket className="h-5 w-5" /> Start free trial
             </a>
