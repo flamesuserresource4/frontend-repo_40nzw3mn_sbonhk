@@ -8,7 +8,7 @@ export default function Hero() {
       {/* Spline background */}
       <div className="absolute inset-0">
         <Spline
-          scene="https://prod.spline.design/QblYNXAoH6zf7SHu/scene.splinecode"
+          scene="https://prod.spline.design/AHV4iNim7HKPpHMA/scene.splinecode"
           style={{ width: "100%", height: "100%" }}
         />
       </div>
