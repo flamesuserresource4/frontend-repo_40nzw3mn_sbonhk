@@ -8,7 +8,7 @@ export default function ContactForm() {
     e.preventDefault();
     const form = new FormData(e.currentTarget);
     const name = form.get("name");
-    setStatus(`Thanks, ${name}! We'll be in touch within 1 business day.`);
+    setStatus(`Merci, ${name}! We’ll reply within 1 business day.`);
     e.currentTarget.reset();
   }
 
@@ -17,13 +17,13 @@ export default function ContactForm() {
       <div className="absolute inset-0 bg-gradient-to-t from-sky-50/60 to-transparent" />
       <div className="relative mx-auto max-w-4xl px-6 py-20">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-semibold text-gray-900 sm:text-4xl">Talk to our team</h2>
+          <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Write to us</h2>
           <p className="mt-3 text-gray-600">
-            Questions about pricing, security, or fit? Send a message and we'll respond quickly.
+            Questions about pricing, security, or fit? Send a note and we’ll respond swiftly.
           </p>
         </div>
 
-        <form onSubmit={handleSubmit} className="mx-auto mt-10 max-w-2xl rounded-2xl bg-white p-6 shadow-sm ring-1 ring-gray-200">
+        <form onSubmit={handleSubmit} className="mx-auto mt-10 max-w-2xl rounded-2xl bg-white/95 p-6 shadow-sm ring-1 ring-gray-200 backdrop-blur">
           <div className="grid gap-4 sm:grid-cols-2">
             <div className="sm:col-span-1">
               <label htmlFor="name" className="text-sm font-medium text-gray-700">Name</label>
@@ -54,11 +54,11 @@ export default function ContactForm() {
                 rows={4}
                 required
                 className="mt-1 w-full rounded-xl border border-gray-200 bg-white px-3 py-2 text-gray-900 placeholder-gray-400 focus:border-emerald-400 focus:outline-none focus:ring-2 focus:ring-emerald-200"
-                placeholder="Tell us a bit about your compliance goals"
+                placeholder="Tell us a little about your compliance goals"
               />
             </div>
             <div className="sm:col-span-2 flex items-center justify-between">
-              <p className="text-xs text-gray-500">We care about your privacy. We won't share your info.</p>
+              <p className="text-xs text-gray-500">We respect your privacy. No spam, ever.</p>
               <button
                 type="submit"
                 className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-4 py-2.5 text-sm font-medium text-white shadow-sm transition hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-emerald-300 focus:ring-offset-2"

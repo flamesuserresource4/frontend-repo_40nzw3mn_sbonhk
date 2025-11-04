@@ -2,23 +2,23 @@ import { CheckCircle, Star } from "lucide-react";
 
 const tiers = [
   {
-    name: "Starter",
-    price: "$0",
-    cadence: "Free",
-    highlight: "Best for trying it out",
+    name: "Atelier",
+    price: "€0",
+    cadence: "/mo",
+    highlight: "For small teams",
     features: [
       "Up to 2 frameworks",
       "Evidence upload",
       "Basic reporting",
       "Email support",
     ],
-    cta: "Get started",
+    cta: "Begin",
     popular: false,
-    color: "from-emerald-50 to-sky-50 border-emerald-200",
+    tone: "from-amber-50 to-rose-50 ring-amber-200/60",
   },
   {
-    name: "Growth",
-    price: "$79",
+    name: "Salon",
+    price: "€79",
     cadence: "/mo",
     highlight: "Most popular",
     features: [
@@ -29,34 +29,34 @@ const tiers = [
     ],
     cta: "Start 14‑day trial",
     popular: true,
-    color: "from-emerald-100 to-violet-100 border-emerald-300",
+    tone: "from-emerald-100 to-sky-100 ring-emerald-300",
   },
   {
-    name: "Enterprise",
+    name: "Grand Tour",
     price: "Custom",
     cadence: "",
-    highlight: "Advanced needs",
+    highlight: "For enterprises",
     features: [
-      "Single Sign-On (SSO)",
+      "SSO & SCIM",
       "Custom controls",
       "Dedicated support",
       "Onboarding & training",
     ],
     cta: "Contact sales",
     popular: false,
-    color: "from-sky-50 to-violet-50 border-sky-200",
+    tone: "from-sky-50 to-violet-50 ring-sky-200/70",
   },
 ];
 
 export default function Pricing() {
   return (
     <section id="pricing" className="relative">
-      <div className="absolute inset-0 bg-gradient-to-b from-white via-emerald-50/30 to-transparent" />
+      <div className="absolute inset-0 bg-gradient-to-b from-white via-emerald-50/40 to-transparent" />
       <div className="relative mx-auto max-w-6xl px-6 py-20">
         <div className="mx-auto max-w-2xl text-center">
-          <h2 className="text-3xl font-semibold text-gray-900 sm:text-4xl">Simple, transparent pricing</h2>
+          <h2 className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-4xl">Pricing, simply framed</h2>
           <p className="mt-3 text-gray-600">
-            Start free. Upgrade when you need more power and collaboration.
+            Transparent plans for European teams. Upgrade as your canvas grows.
           </p>
         </div>
 
@@ -64,11 +64,13 @@ export default function Pricing() {
           {tiers.map((tier) => (
             <div
               key={tier.name}
-              className={`relative rounded-2xl border ${tier.color} bg-gradient-to-br p-6 shadow-sm`}
+              className={`relative rounded-2xl bg-gradient-to-br p-6 shadow-sm ring-1 ${tier.tone}`}
             >
               {tier.popular && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-emerald-500 px-3 py-1 text-xs font-medium text-white shadow"> 
-                  <div className="inline-flex items-center gap-1"><Star className="h-3 w-3" /> Most popular</div>
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-emerald-600 px-3 py-1 text-xs font-medium text-white shadow">
+                  <div className="inline-flex items-center gap-1">
+                    <Star className="h-3 w-3" /> Most popular
+                  </div>
                 </div>
               )}
               <h3 className="text-lg font-semibold text-gray-900">{tier.name}</h3>
@@ -80,7 +82,7 @@ export default function Pricing() {
               <ul className="mt-6 space-y-3">
                 {tier.features.map((f) => (
                   <li key={f} className="flex items-start gap-2 text-sm text-gray-700">
-                    <CheckCircle className="mt-0.5 h-4 w-4 text-emerald-500" />
+                    <CheckCircle className="mt-0.5 h-4 w-4 text-emerald-600" />
                     <span>{f}</span>
                   </li>
                 ))}

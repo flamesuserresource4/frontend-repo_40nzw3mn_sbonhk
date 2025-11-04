@@ -2,19 +2,19 @@ import Hero from "./components/Hero";
 import Pricing from "./components/Pricing";
 import BlogTeaser from "./components/BlogTeaser";
 import ContactForm from "./components/ContactForm";
-import { Leaf } from "lucide-react";
+import { Leaf, User } from "lucide-react";
 
 export default function App() {
   return (
     <div className="min-h-screen bg-white text-gray-900">
       {/* Header */}
-      <header className="sticky top-0 z-20 bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60">
+      <header className="sticky top-0 z-20 bg-white/70 backdrop-blur supports-[backdrop-filter]:bg-white/50">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <a href="#" className="inline-flex items-center gap-2">
             <span className="grid h-9 w-9 place-items-center rounded-xl bg-emerald-100 text-emerald-700 ring-1 ring-emerald-200">
               <Leaf className="h-5 w-5" />
             </span>
-            <span className="text-lg font-semibold">Verdant</span>
+            <span className="text-[20px] font-semibold tracking-tight">Verdant</span>
           </a>
           <nav className="hidden items-center gap-6 text-sm text-gray-700 sm:flex">
             <a href="#pricing" className="hover:text-gray-900">Pricing</a>
@@ -22,9 +22,9 @@ export default function App() {
             <a href="#contact" className="hover:text-gray-900">Contact</a>
             <a
               href="#pricing"
-              className="rounded-xl bg-emerald-600 px-4 py-2 font-medium text-white shadow-sm transition hover:bg-emerald-700"
+              className="inline-flex items-center gap-2 rounded-xl bg-gray-900/90 px-4 py-2 font-medium text-white shadow-sm transition hover:bg-gray-900"
             >
-              Sign up
+              <User className="h-4 w-4" /> Sign up
             </a>
           </nav>
         </div>
